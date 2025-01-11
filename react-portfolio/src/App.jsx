@@ -1,7 +1,10 @@
 import { useState } from 'react'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import Body from './components/Body'
+import Portfolio from './components/Portfolio'
+import About from './components/About'
+import Contact from './components/Contact'
+import Resume from './components/Resume'
 
 
 function App() {
@@ -10,7 +13,10 @@ function App() {
   return (
     <>
       <Header />
-      <Body />
+      <About />
+      <Portfolio />
+      <Contact />
+      <Resume />
       <Footer />
     </>
   )
