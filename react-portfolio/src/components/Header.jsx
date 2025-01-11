@@ -1,8 +1,11 @@
 //Constants can be declared up here
+import NavBar from "./NavBar";
 
 function Header() {
   return (
-<h1>Test</h1>
+    <div className="header">
+        <NavBar />
+    </div>
   );
 }
 

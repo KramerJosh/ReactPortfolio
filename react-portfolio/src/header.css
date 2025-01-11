@@ -1,0 +1,36 @@
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10px;
+    background-color: #101010;
+    z-index: 1000;
+  }
+  
+  .navbar {
+    background-color: #333;
+    padding: 10px 20px;
+  }
+  
+  /* Flexbox applied to the list */
+  .nav-items {
+    display: flex;
+    justify-content: space-between; /* Even spacing */
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Styling each nav item */
+  .nav-item {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .nav-item:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
