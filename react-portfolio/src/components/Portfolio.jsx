@@ -3,9 +3,13 @@ import PortCard from "./PortCard";
 
 function Portfolio() {
   return (
-    <div className="portfolio">
+    <div className="portfolio" id="portfolio">
       <h2>Portfolio!</h2>
       <div className="cardHolder">
+        <PortCard />
+        <PortCard />
+        <PortCard />
+        <PortCard />
         <PortCard />
         <PortCard />
         <PortCard />

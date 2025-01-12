@@ -1,6 +1,7 @@
 function About() {
   return (
     <div className="about">
+      <div id="about"></div>
       <h2>About!</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptatem

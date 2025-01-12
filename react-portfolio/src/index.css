@@ -1,67 +1,49 @@
-/* notes */
-/* header is 0 from top, 10vh high */
-/* portfolio div is 10vh from top*/
-
-
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 
   --primary-color: #033F63;
   --secondary-color: #73D2DE;
   --accent-color: #E94F37;
   --black-color: #062726;
   --white-color: #DAD2D8;
-
-
 }
-
-#root {
-  height: 100vh; 
-  width: 100vw;  
-}
-
 
 body {
   display: flex;
-  justify-items: center;
-  align-items: center;
-  /* min-width: 100vw;
-  min-height: 100vh; */
+  flex-direction: column;
+  min-height: 100vh;
   margin: 0;
   background-color: var(--white-color);
   color: var(--black-color);
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+#root {
+  flex: 1;
+  width: 100vw;
 }
 
-
-/* Start Header CSS */
-
+/* start header */
 .header {
   position: fixed;
+  top: 0;
   width: 100%;
   height: 10%;
-  margin-bottom: 10px;
-  margin-top: 0px;
+  max-height: 4rem;
+  min-height: 4rem;
+  background-color: var(--black-color);
+  z-index: 1000;
 }
 
 .navbar {
-  background-color: var(--black-color);
+  max-height: 4rem;
+  min-height: 4rem;
 }
 
 .nav-items {
   display: flex;
-  justify-content: space-between; /* Even spacing */
+  justify-content: space-between;
   align-items: center;
   list-style: none;
   padding: 0;
@@ -73,94 +55,70 @@ h1 {
   padding: 10px 15px;
   text-decoration: none;
   cursor: pointer;
+  font-size: 1.6rem;
 }
 
-.nav-item:hover {
+.nav-item button {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  border: none;
+  padding: 12px 15px;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+
+.nav-item button:hover {
   background-color: var(--accent-color);
   border-radius: 5px;
 }
 
-/* Start About CSS */
 
-.about {
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border-width: 2px;
-  border-style:solid;
-  border-color: var(--primary-color);
+
+/* Content Spacing Fix */
+.main-content {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
-.about p {
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-/* Start PortCard CSS */
-.portfolio {
-  display: flex;
+/* Section Styles */
+.about, .portfolio, .contact, .resume {
   margin-top: 10vh;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border-width: 2px;
-  border-style:solid;
+  border-style: solid;
   border-color: var(--primary-color);
 }
 
 .cardHolder {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; 
-  align-items: center;
-  list-style: none;
-  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem; 
+  width: 50%;
   margin: auto;
 }
 
+
 .portCard {
-  display: flex;
-  border-width: 2px;
-  border-style:dotted;
-  border-color: var(--primary-color);
-  padding: 10px 15px;
-  margin: 10px;
+  margin: 2rem;
+  border: solid
 }
 
-/* Start Contact CSS here */
-
-.contact {
-  display: flex;
-  margin-top: 10vh;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-width: 2px;
-  border-style:solid;
-  border-color: var(--primary-color);
+.portCard img {
+  max-width: 20vw;
 }
 
-/* Start Resume CSS */
-
-.resume {
-  display: flex;
-  margin-top: 10vh;
-  margin-bottom: 10vh;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-width: 2px;
-  border-style:solid;
-  border-color: var(--primary-color);
-}
-
-/* Start Footer CSS */
-
+/* start footer Styles */
 .footer {
-  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 5vh;
   background-color: var(--black-color);
   color: var(--white-color);
+  /* padding: 10px 0; */
+  text-align: center;
 }
 
