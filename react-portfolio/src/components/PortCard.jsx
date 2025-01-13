@@ -1,14 +1,14 @@
+//TODO - add "link" to props, and make the image link to the deployed project.
 
 
-const PortCard = () => {
-    const testImage = `./src/assets/SMPTE_Color_Bars.png`;
+const PortCard = ({title, desc, img}) => {
+    const testImage = img;
 
     return(
         <div className="portCard">
-            <h2>Card Header</h2>
-            <p>I'm a card!</p>
+            <h2>{title}</h2>
+            <p>{desc}</p>
             <img src={testImage} alt="" />
-            {/* <img src="src\assets\SMPTE_Color_Bars.png" alt="" /> */}
         </div>
     )
 }
