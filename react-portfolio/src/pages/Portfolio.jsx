@@ -6,7 +6,7 @@ import projects from "../projects";
 function Portfolio() {
   return (
     <div id="portfolio">
-      <h2>Portfolio!</h2>
+      <h2 className='text-center text-2xl font-bold my-4'>Portfolio!</h2>
       <div className="flex justify-center items-center flex-wrap gap-4 mx-auto">
         {/* <PortCard /> */}
         {projects.map((project => {

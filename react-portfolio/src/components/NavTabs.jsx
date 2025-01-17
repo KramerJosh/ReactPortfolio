@@ -6,7 +6,7 @@ function NavTabs() {
   const currentPage = useLocation().pathname;
 
   return (
-    <ul className="flex flex-row space-x-6 items-center">
+    <ul className="flex flex-row space-x-6 items-center bg-secondary-color text-primary-color h-16">
       <li className="flex-1">
         <Link
           to="/"
