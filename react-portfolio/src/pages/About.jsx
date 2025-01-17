@@ -2,7 +2,7 @@ function About() {
   return (
     <div className="about">
       <div id="about"></div>
-      <h2>About!</h2>
+      <h2 className="text-3xl font-bold underline">About!</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptatem
         atque cumque consectetur dicta rem, ex, sit, quo at illo laudantium.

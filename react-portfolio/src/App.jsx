@@ -1,28 +1,17 @@
-import { useState } from 'react'
-import Header from './components/Header'
-import Footer from './components/Footer'
-import ActiveSection from './components/ActiveSection'
-// use useState to determine what section we're viewing
+// Bringing in the required import from 'react-router-dom'
+import { Outlet } from 'react-router-dom';
+import NavTabs from './components/NavTabs';
 
 function App() {
-  const [page, setPage] = useState('About')
-  
+  // The Outlet component will conditionally swap between the different pages according to the URL
   return (
-    <div>
-      <Header setPage={setPage} /> 
-      <ActiveSection choice={page} /> 
-      <Footer />
-    </div>
+    <>
+      <NavTabs />
+      <main className="mx-3">
+        <Outlet />
+      </main>
+    </>
   );
 }
 
-//   return (
-//     <>
-//       <Header />
-//       <ActiveSection choice={page}/>
-//       <Footer />
-//     </>
-//   )
-// }
-
-export default App
+export default App;

@@ -1,5 +1,5 @@
 // Put Portfolio Cards here
-import PortCard from "./PortCard";
+import PortCard from '../components/PortCard'
 import projects from "../projects";
 
 // <>
