@@ -2,26 +2,12 @@
 import PortCard from '../components/PortCard'
 import projects from "../projects";
 
-// <>
-// <h1>Products</h1>
-// {products.map((product) => {
-//   return (
-//     <div key={product.id}>
-//       <h1>{product.title}</h1>
-//       <h2>{product.price}</h2>
-//       <p>{product.description}</p>
-//     </div>
-//   );
-// })}
-// </>
-
-
 
 function Portfolio() {
   return (
-    <div className="portfolio" id="portfolio">
+    <div id="portfolio">
       <h2>Portfolio!</h2>
-      <div className="cardHolder">
+      <div className="flex justify-center items-center flex-wrap gap-4 mx-auto">
         {/* <PortCard /> */}
         {projects.map((project => {
           return (
@@ -34,22 +20,5 @@ function Portfolio() {
   );
 }
 
-{/* function Portfolio() {
-  return (
-    <div className="portfolio" id="portfolio">
-      <h2>Portfolio!</h2>
-      <div className="cardHolder">
-        <PortCard />
-        <PortCard />
-        <PortCard />
-        <PortCard />
-        <PortCard />
-        <PortCard />
-        <PortCard />
-        <PortCard />
-      </div>
-    </div>
-  );
-} */}
 
 export default Portfolio;

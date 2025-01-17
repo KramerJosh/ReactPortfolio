@@ -1,5 +1,3 @@
-/* change everything to tailwind */
-
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -108,7 +106,9 @@
   --tw-contain-style:  ;
 }
 
-/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */
+/*
+! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com
+*/
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -554,127 +554,153 @@ video {
   display: none;
 }
 
-:root {
-  font-family: Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  --primary-color: #033F63;
-  --secondary-color: #73D2DE;
-  --accent-color: #E94F37;
-  --black-color: #062726;
-  --white-color: #DAD2D8;
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
 }
 
-body {
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.flex {
   display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  margin: 0;
-  background-color: var(--white-color);
-  color: var(--black-color);
 }
 
-#root {
-  flex: 1;
-  width: 100vw;
+.h-48 {
+  height: 12rem;
 }
 
-/* start header */
+.w-80 {
+  width: 20rem;
+}
 
-.header {
-  position: fixed;
-  top: 0;
+.w-full {
   width: 100%;
-  height: 10%;
-  max-height: 4rem;
-  min-height: 4rem;
-  background-color: var(--black-color);
-  z-index: 1000;
 }
 
-.navbar {
-  max-height: 4rem;
-  min-height: 4rem;
+.flex-1 {
+  flex: 1 1 0%;
 }
 
-.nav-items {
-  display: flex;
-  justify-content: space-between;
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.items-center {
   align-items: center;
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
-.nav-item {
-  color: var(--white-color);
-  padding: 10px 15px;
-  text-decoration: none;
-  cursor: pointer;
-  font-size: 1.6rem;
-}
-
-.nav-item button {
-  background-color: var(--black-color);
-  color: var(--white-color);
-  border: none;
-  padding: 12px 15px;
-  cursor: pointer;
-  font-size: 1.6rem;
-}
-
-.nav-item button:hover {
-  background-color: var(--accent-color);
-  border-radius: 5px;
-}
-
-/* Content Spacing Fix */
-
-.main-content {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-/* Section Styles */
-
-.about, .portfolio, .contact, .resume {
-  margin-top: 10vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.justify-center {
   justify-content: center;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.space-x-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.border-2 {
   border-width: 2px;
-  border-style: solid;
-  border-color: var(--primary-color);
 }
 
-.cardHolder {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  width: 50%;
-  margin: auto;
+.border-gray-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity, 1));
 }
 
-.portCard {
-  margin: 2rem;
-  border: solid
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
-.portCard img {
-  max-width: 20vw;
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-/* start footer Styles */
-
-.footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 5vh;
-  background-color: var(--black-color);
-  color: var(--white-color);
-  /* padding: 10px 0; */
-  text-align: center;
+.p-4 {
+  padding: 1rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity, 1));
+}
+
+.text-gray-800 {
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity, 1));
+}
+
+.underline {
+  text-decoration-line: underline;
+}
+
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.hover\:scale-105:hover {
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:shadow-lg:hover {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}

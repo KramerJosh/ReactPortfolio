@@ -7,7 +7,8 @@ function App() {
   return (
     <>
       <NavTabs />
-      <main className="mx-3">
+      {/* class mx-3 adds margins */}
+      <main className="mx-3"> 
         <Outlet />
       </main>
     </>

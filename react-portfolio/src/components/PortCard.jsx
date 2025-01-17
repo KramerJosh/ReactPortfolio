@@ -1,17 +1,19 @@
-//TODO - add "link" to props, and make the image link to the deployed project.
+const PortCard = ({ title, desc, img, link }) => {
+  return (
+    <div className="bg-white border-2 border-gray-300 rounded-lg shadow-md overflow-hidden transform transition-transform hover:scale-105 hover:shadow-lg w-80">
+      <a href={link} target="_blank" rel="noopener noreferrer">
+        <img
+          src={img}
+          alt={title}
+          className="w-full h-48 object-cover"
+        />
+      </a>
+      <div className="p-4">
+        <h2 className="text-xl font-semibold text-gray-800 mb-2">{title}</h2>
+        <p className="text-gray-600">{desc}</p>
+      </div>
+    </div>
+  );
+};
 
-
-const PortCard = ({title, desc, img}) => {
-    const testImage = img;
-
-    return(
-        <div className="portCard">
-            <h2>{title}</h2>
-            <p>{desc}</p>
-            <img src={testImage} alt="" />
-        </div>
-    )
-}
-
-export default PortCard
-
+export default PortCard;
