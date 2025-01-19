@@ -1,25 +1,13 @@
+import { headerStyle } from "../styles";
 function About() {
   return (
-    <div className="about">
-      <div id="about"></div>
-      <h2 className="text-3xl font-bold underline">About!</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptatem
-        atque cumque consectetur dicta rem, ex, sit, quo at illo laudantium.
-        Aliquam cupiditate sed vero dicta consectetur, cum laudantium magnam?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
-        sit consequatur magni labore quo? Officiis natus, necessitatibus harum
-        dicta sunt ipsam recusandae! Reiciendis fuga optio similique
-        consequuntur nostrum, facilis cum.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-        consequatur enim error, minus sapiente porro a. Eius eligendi voluptate
-        qui iusto laboriosam aspernatur, placeat dolore, dolorum illum sed modi
-        repudiandae!
-      </p>
+    <div className="about flex flex-col items-center justify-center">
+      <h2 className={headerStyle}>About!</h2>
+      <div id="aboutHolder" className="inline-block m-8 border border-solid border-primary-color shadow-none p-3 mx-auto">
+  <p className="m-0">Hello - and welcome to my internet page.</p>
+  <p className="m-0">I'm Josh Kramer, and I'm a Web Developer, Audio-Visualist, and Music Technologist.</p>
+  <p className="m-0">I'll be using this website to showcase projects I've worked on.</p>
+</div>
     </div>
   );
 }
