@@ -4,7 +4,7 @@ function About() {
     <div className="about flex flex-col items-center justify-center">
       <h2 className={headerStyle}>About</h2>
       <div className="flex space-x-8">
-      <img src="public/assets/pfp.jpg" alt="" className="w-52 h-52 m-8 p-3"/>
+      <img src="/assets/pfp.jpg" alt="" className="w-52 h-52 m-8 p-3"/>
       <div
         id="aboutHolder"
         className="inline-block m-8 border border-solid border-primary-color shadow-none p-3 mx-auto"
