@@ -2,7 +2,7 @@ import { useState } from "react";
 import { headerStyle } from "../styles";
 
 const formStyle =
-  "p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-color";
+  "p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-color";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -33,7 +33,7 @@ const Contact = () => {
       <div className="flex flex-col justify-center items-center bg-white-color">
         <form
           onSubmit={handleSubmit}
-          className="flex flex-col gap-4 w-full max-w-md bg-white p-6 rounded-md shadow-md"
+          className="flex flex-col gap-4 w-full max-w-md bg-white-color p-6 rounded-md"
         >
           <div className="flex flex-col">
             <label htmlFor="name" className="mb-2 font-medium ">
