@@ -2,8 +2,8 @@ import { headerStyle } from "../styles";
 
 const Resume = () => {
   return (
-    <div className="flex flex-col justify-center items-center bg-gray-100">
-      <h2 className={`${headerStyle} text-3xl font-bold mb-8`}>Resume!</h2>
+    <div className="flex flex-col justify-center items-center">
+      <h2 className={`${headerStyle}`}>Resume - Click <a href="../src/assets/resume.pdf" download="JoshKramerResume" className="underline">Here</a> to Download</h2>
       <iframe
         src="../src/assets/resume.pdf#toolbar=0"
         width="600"

@@ -29,7 +29,7 @@ const Contact = () => {
 
   return (
     <div>
-      <h2 className={`${headerStyle} text-3xl font-bold mb-8`}>Contact</h2>
+      <h2 className={`${headerStyle}`}>Contact</h2>
       <div className="flex flex-col justify-center items-center bg-white-color">
         <form
           onSubmit={handleSubmit}
