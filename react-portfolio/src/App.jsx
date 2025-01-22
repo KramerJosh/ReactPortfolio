@@ -9,7 +9,7 @@ function App() {
   return (
     <div className='bg-white-color flex flex-col'>
       <Header />
-      <main className="mx-3 bg-white-color text-primary-color min-h-8 "> 
+      <main className="mx-3 bg-white-color text-primary-color min-h-"> 
         <Outlet />
         
       </main>
