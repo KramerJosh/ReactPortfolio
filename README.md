@@ -7,7 +7,7 @@ I'll be adding to it more over time.
 Deployed application can be found here: [Portfolio](https://kramerjosh.netlify.app/)
 
 Screenshot:
-![Deployed Application](image.png)
+![Deployed Application](React_Portfolio\ReactPortfolio\react-portfolio\src\assets\Screenshot.png)
 
 ## To Do
 
